@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Physical environment with obstacles for signal attenuation -->
+<environment>
+    <object position="min 200 200 0, max 300 400 10" material="brick" shape="cuboid"/>
+    <object position="min 500 100 0, max 600 300 10" material="concrete" shape="cuboid"/>
+    <object position="min 700 500 0, max 800 700 10" material="brick" shape="cuboid"/>
+    <object position="min 100 600 0, max 250 650 10" material="concrete" shape="cuboid"/>
+    <object position="min 400 400 0, max 500 500 10" material="metal" shape="cuboid"/>
+</environment>
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Turtle mobility script for complex movement patterns -->
+<movements>
+    <repeat n="100">
+        <set speed="uniform(5, 15)"/>
+        <turn angle="uniform(-45, 45)"/>
+        <forward d="uniform(20, 100)"/>
+        <wait t="uniform(0.5, 2)"/>
+    </repeat>
+</movements>
+

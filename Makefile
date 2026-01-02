@@ -1,5 +1,5 @@
 #
-# OMNeT++/OMNEST Makefile for mst-based-clustering
+# OMNeT++/OMNEST Makefile for minimum-spanning-tree-based-clustering
 #
 # This file was generated with the command:
 #  opp_makemake -f --deep -O out -KINET4_5_PROJ=../inet4.5 -DINET_IMPORT -I. -I$$\(INET4_5_PROJ\)/src -L$$\(INET4_5_PROJ\)/src -lINET$$\(D\)
@@ -7,7 +7,7 @@
 
 # Name of target to be created (-o option)
 TARGET_DIR = .
-TARGET_NAME = mst-based-clustering$(D)
+TARGET_NAME = minimum-spanning-tree-based-clustering$(D)
 TARGET = $(TARGET_NAME)$(EXE_SUFFIX)
 TARGET_FILES = $(TARGET_DIR)/$(TARGET)
 
@@ -31,10 +31,11 @@ PROJECTRELATIVE_PATH =
 O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 
 # Object files for local .cc, .msg and .sm files
-OBJS = $O/MstClustering.o
+OBJS = $O/MstClustering.o $O/MstClusteringPacket_m.o
 
 # Message files
-MSGFILES =
+MSGFILES = \
+    MstClusteringPacket.msg
 
 # SM files
 SMFILES =

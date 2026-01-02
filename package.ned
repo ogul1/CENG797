@@ -1,0 +1,2 @@
+@namespace(mstclustering);
+package mstclustering;
